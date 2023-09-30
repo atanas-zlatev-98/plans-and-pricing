@@ -21,7 +21,7 @@ const Home = (props) => {
     <>
       <div className='all-types'>
 
-        <h2 className='plans-and-pricing ps-5 text-center text-white'>Plans & Pricing</h2>
+        <h2 className='plans-and-pricing text-center text-white'>Plans & Pricing</h2>
         <div className='d-flex flex-wrap justify-content-left click-plans'>
           <TypesList scroll={titleGet}></TypesList>
         </div>
