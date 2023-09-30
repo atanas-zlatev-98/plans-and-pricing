@@ -28,6 +28,7 @@ const Home = (props) => {
 
       </div>
       <div className='type' ref={myRef}>
+        {titleScroll === '' && (<div><h3 className='m-0 text-center'>Please choose a design <br/>from above! </h3></div>)}
         {titleScroll === 'Plans & Prices 1' && (<TypeOne></TypeOne>)}
         {titleScroll === 'Plans & Prices 2' && (<TypeTwo></TypeTwo>)}
       </div>
