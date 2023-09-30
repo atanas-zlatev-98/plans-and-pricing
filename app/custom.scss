@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    background-color: #373a3b;
+}
+
+.all-types {
+    padding-top: 100px;
+    min-width: 100%;
+    height: 100vh;
+}
+.type{
+    min-width: 100%;
+    height: 100vh;
+    background-color: #ecf0f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.click-type {
+    cursor: pointer;
+}
+@media only screen and (max-width: 918px) {
+.click-plans {
+justify-content: center !important;
+height: fit-content;
+position: relative;
+}
+.type {
+    height: fit-content;
+}
+}

@@ -1,0 +1,163 @@
+$offerBackGround: #FFF;
+.plans {
+   min-width: 100%;
+   display: flex;
+   justify-content: flex-start;
+}
+.plans-price {
+    border-left: 3px solid #00c500;
+    border-right: 3px solid #00c500;
+    margin-left: 3rem;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+}
+.type-main {
+    min-width: 100%;
+    height: 100vh;
+    background: url("../../../assets/images/bg-type-1.png") center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.type-layout{
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.text-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100%;
+}
+.offer-one {
+    width: 300px;
+    height: 470px;
+    background-color: $offerBackGround;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 6px;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+.offer-two {
+    width: 350px;
+    height: 570px;
+    background-color: $offerBackGround;
+    position: relative;
+    top: -50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 6px;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+.offer-three {
+    width: 300px;
+    height: 470px;
+    background-color: $offerBackGround;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 6px;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+.separator {
+    width: 80%;
+    height: 2px;
+    //border-bottom: 1px solid rgb(96, 96, 96);
+}
+
+.price-month {
+    font-size: 20px;
+}
+.offers-p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.offers-text {
+    font-weight: bold;
+    color: black;
+}
+.offers-container{
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.quiet-text {
+    display: flex;
+    flex-wrap: wrap;
+}
+.quiet-text > p {
+    padding-left: 5px;
+    margin-bottom: 5px;
+
+    &:hover {
+        color: black;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+}
+.offers-icon {
+    color: #00c500;
+    font-size: 20px;
+}
+.button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button-subt {
+    width: 70%;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 50px;
+    color: white;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    background: linear-gradient(90deg, rgba(62,207,54,1) 0%, rgba(57,228,111,1) 50%, rgba(62,207,54,1) 100%);
+    &:hover {
+        background: linear-gradient(90deg, rgba(62,207,54,1) 0%, rgba(62,207,54,1) 50%, rgba(62,207,54,1) 100%);
+        transition: 1s;
+    }
+}
+
+@media only screen and (max-width: 918px) {
+
+    .type-main{
+        height: fit-content;
+
+    }
+
+    .type-layout {
+      flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .offer-two {
+        top: 0;
+    }
+    .plans {
+        justify-content: center;
+    }
+    .plans-price {
+        margin-left: 0;
+        margin-top: 25px;
+    }
+
+}
